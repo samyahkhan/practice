@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Aeron Cold Chain Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+           nav {
+            background-color: navy;
+            text-align: center;
+            /* padding-left: 450px; */
+        }
+        nav a {
+            padding: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+        h1 {
+        background-color: white(255, 255, 255);
+        padding: 150px; 
+        font-weight: bold;
+        text-align: center;
+        color: navy;
+        position: relative;
+    }
+    h2{
+        font-weight: bolder;
+    }
+    h3{
+        font-weight: bold;
+    }
+    p{
+        font-size: large;
+        color: black;
+    }
+    table{
+        justify-content: center;
+    }
+    table,td{
+        border: 2px solid ;
+        width: 80%;
+        font-size: large;
+        padding: 10px;
+        background-color: lightgrey;
+        padding-left: 20px;
+    }
+    
+footer {
+    background-color: navy;
+    overflow: hidden;
+}
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.popup {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html">
+                    <img src="img/logo.png" height="150px" width="300px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page1.html">About Us</a>
+            <a href="products.html">Products & Services</a>
+            <a href="#">Brochures</a>
+            <a href="workwithus.html">Work With Us</a>
+        </nav>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img src="img/work3.webp" style="border-radius: 10%; width: 500px;">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                <h3><strong>Cold Chain Solutions, Cold Storage and Logistics</strong></h3>
+        <p>
+            <strong>Cold Chain</strong> is an unbrokentemperature-controlledsupply chain. It is used to preserve and to extendshelf lifeof products, such as fresh fruits & vegetables,seafood,processed food,frozen food, dairy products, ice cream,photographic film, chemicals andpharmaceutical and vaccines. Cold chain goods are heat-sensitive and necessitate all of the means used to ensure a constant temperature for a product that is perishable, from the time it is manufactured until the time it is consumed.
+
+Aeron Cold Chain Solutions is a fast growing organisation providing Pre-Engineered Building (PEB) based PUF insulated panels structures widely used in cold storages, food processing, warehousing, pack-houses, collection centres, dairy, meat processing plants etc. We undertake turnkey projects with integration of leading technologies and services to meet various climatic conditions. We also provide radically new energy management technology and solutions that reduce fossil fuels use thereby reducing cabon emissions.
+
+Our best-in-class cold chain solutions also come with cold chain monitoring system. A good near real-time temperature monitoring and analysis mechanism ensure cold chain reliablity.
+<br>
+Salient Features of Monitoring System:
+<ul>
+<li>Monitoring cold room temperature and relative humidity.</li>
+<li>Anytime data access</li>
+<li>Realtime notifications and alerts</li>
+<li>Predictive, Detailed and near real-time analytics</li>
+<li>Shipment and location tracking</li>
+<li>Repoting and MIS</li>
+</ul>
+        </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table>
+                        <tr>
+                            <td><strong>Goods Details</strong></td>
+                            <td>Vegetables</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Usage/Application</strong></td>
+                            <td>Standard</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Automation Grade</strong></td>
+                            <td>Fully Automatic</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Temperature</strong></td>
+                            <td>Standard</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Material</strong></td>
+                            <td>Stainless Steel</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Duration Of Storage</strong></td>
+                            <td>Standard</td>
+                        </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-weight: bold;">For more information, </p>
+                    <button type="Contact Us" class="btn btn-info form-control" name="contact_button" onclick="showPopup()"><strong>Contact Us</strong></button>
+                </div>
+            </div>
+        </div>
+            <br>
+            <div id="popupContainer" class="overlay"  >
+                <div class="popup" style="border-radius: 10%;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" >
+                                <br>
+                                <h3 class="black_text">CONTACT US</h3>
+                                <p>
+                                    <ul style="list-style: none;">
+                                        <li class="black_text">+91 89205 25278</li>
+                                        <li class="black_text">aeroncsd@gmail.com</li>
+                                    </ul>
+                                </p>
+                                <br>
+                            </div>
+                    <br>
+                    <button onclick="hidePopup()" style="color: navy; border-radius: 10px; padding-left: 10px; padding-right: 10px;"> Close </button>
+                </div>
+            </div>
+            </div>
+
+        <!-- <section>
+        <footer>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQs</a>
+            <a href="#">&copy; 2023 | Aeron Cold Chain Solutions</a>
+        </footer>
+    </section> -->
+</body>
+</html>
+
+    <script>
+        function showPopup() 
+            {
+                document.getElementById("popupContainer").style.display = "flex";
+            }
+            function hidePopup() 
+            {
+                document.getElementById("popupContainer").style.display = "none";
+            }
+    </script>
+
+        
+        

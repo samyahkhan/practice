@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Aeron Cold Chain Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav {
+            background-color: navy;
+            text-align: center;
+            /* padding-left: 450px; */
+        }
+        nav a {
+            padding: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+        h1 {
+        background-color: white(255, 255, 255);
+        padding: 150px; 
+        font-weight: bold;
+        text-align: center;
+        color: navy;
+        position: relative;
+    }
+    h2{
+        font-weight: bolder;
+    }
+    h3{
+        font-weight: bold;
+    }
+    h3.black_text {
+    color: black;
+    }
+    li.black_text {
+    color: black;
+    }
+    body {
+        background-color: #ffffff;
+        color: black;
+    }
+    img{
+        margin: 50 50;
+    }
+    img:hover{
+        transform: scale(1.05);
+    }
+    .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 30px;
+}
+       
+        .popup {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html">
+                    <img src="img/logo.png" height="150px" width="300px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page1.html">About Us</a>
+            <a href="products.html">Products & Services</a>
+            <a href="#">Brochures</a>
+            <a href="workwithus.html">Work With Us</a>
+        </nav>
+        <br>
+        
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="product1.html"><img src="img/work3.webp" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Food Products Cold Chain Solutions</div>
+                </div>
+                <div class="col-md-4">
+                    <a href="product2.html"><img src="img/mushroom-plant-500x500.webp" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Mushroom Plants</div>
+                </div>
+                <div class="col-md-4">
+                    <a href="product3.html"><img src="img/banana.webp" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Ripening Chambers</div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/work4.webp" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Freezer Room</div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/blast..webp" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Blast Freezers</div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/coldstorage.webp" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Cold Storage System</div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/bank.webp" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Bank Loan And Subsidy Consultation</div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/mortuary.png" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Mortuary Cabinet</div>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="img/web4.png" style="border-radius: 50%; width: 100%;"></a>
+                    <div class="centered">Vaccine Storage</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-weight: bold;">For more information, </p>
+                    <button type="Contact Us" class="btn btn-info form-control" name="contact_button" onclick="showPopup()"><strong>Contact Us</strong></button>
+                </div>
+            </div>
+        </div>
+            <br>
+            <div id="popupContainer" class="overlay"  >
+                <div class="popup" style="border-radius: 10%;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" >
+                                <br>
+                                <h3 class="black_text">CONTACT US</h3>
+                                <p>
+                                    <ul style="list-style: none;">
+                                        <li class="black_text">+91 89205 25278</li>
+                                        <li class="black_text">aeroncsd@gmail.com</li>
+                                    </ul>
+                                </p>
+                                <br>
+                            </div>
+                    <br>
+                    <button onclick="hidePopup()" style="color: navy; border-radius: 10px; padding-left: 10px; padding-right: 10px;"> Close </button>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQs</a>
+            <a href="#">&copy; 2023 | Aeron Cold Chain Solutions</a>
+        </footer>
+    <script>
+        function showPopup() 
+            {
+                document.getElementById("popupContainer").style.display = "flex";
+            }
+            function hidePopup() 
+            {
+                document.getElementById("popupContainer").style.display = "none";
+            }
+    </script>
+    </body>
+    </html>
+    

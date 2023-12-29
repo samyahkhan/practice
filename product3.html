@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src=
+        "https://code.jquery.com/jquery-3.6.0.min.js ">
+    </script>
+    <title>Aeron Cold Chain Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        nav {
+            background-color: navy;
+            text-align: center;
+            /* padding-left: 450px; */
+        }
+        nav a {
+            padding: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+        h1 {
+        background-color: white(255, 255, 255);
+        padding: 150px; 
+        font-weight: bold;
+        text-align: center;
+        color: navy;
+        position: relative;
+    }
+    h2{
+        font-weight: bolder;
+    }
+    h3{
+        font-weight: bold;
+    }
+    p{
+        font-size: large;
+        color: black;
+    }
+    table{
+        justify-content: center;
+    }
+    table,td{
+        border: 2px solid ;
+        width: 80%;
+        font-size: large;
+        padding: 10px;
+        background-color: lightgrey;
+        padding-left: 20px;
+    }
+    
+footer {
+    background-color: navy;
+    overflow: hidden;
+}
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.popup {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .slide {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html">
+                    <img src="img/logo.png" height="150px" width="300px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page1.html">About Us</a>
+            <a href="products.html">Products & Services</a>
+            <a href="#">Brochures</a>
+            <a href="workwithus.html">Work With Us</a>
+        </nav>
+        <br>
+        
+        <!-- <section>
+        <footer>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQs</a>
+            <a href="#">&copy; 2023 | Aeron Cold Chain Solutions</a>
+        </footer>
+    </section> -->
+   
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/banana.webp" style="height: 400px; width: 500px">
+                </div>
+                <div class="col-md-6">
+                <h3><strong>Ripening Chambers</strong></h3>
+        <p>
+            Pioneers in the industry, we offer blue star banana ripening chamber and blue star banana ripening chambers from India.
+        </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table>
+                        <tr>
+                            <td><strong>Capacity</strong></td>
+                            <td>Customized</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Temperature Range</strong></td>
+                            <td>2 to 8 degree</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Automation Grade</strong></td>
+                            <td>Automatic</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chamber Size</strong></td>
+                            <td>Customised</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Compressor Type</strong></td>
+                            <td>Reciprocating</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Insulation Material</strong></td>
+                            <td>Puff</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Country of Origin</strong></td>
+                            <td>Made in India</td>
+                        </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-weight: bold;">For more information, </p>
+                    <button type="Contact Us" class="btn btn-info form-control" name="contact_button" onclick="showPopup()"><strong>Contact Us</strong></button>
+                </div>
+            </div>
+        </div>
+            <br>
+            <div id="popupContainer" class="overlay"  >
+                <div class="popup" style="border-radius: 10%;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" >
+                                <br>
+                                <h3 class="black_text">CONTACT US</h3>
+                                <p>
+                                    <ul style="list-style: none;">
+                                        <li class="black_text">+91 89205 25278</li>
+                                        <li class="black_text">aeroncsd@gmail.com</li>
+                                    </ul>
+                                </p>
+                                <br>
+                            </div>
+                    <br>
+                    <button onclick="hidePopup()" style="color: navy; border-radius: 10px; padding-left: 10px; padding-right: 10px;"> Close </button>
+                </div>
+            </div>
+            </div>
+</body>
+</html>
+
+    <script>
+        let sliderImages = document.querySelectorAll(".slide"),
+    arrowLeft = document.querySelector("#arrow-left"),
+    arrowRight = document.querySelector("#arrow-right"),
+    current = 0;
+ 
+// Clear all images
+function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "none";
+    }
+}
+ 
+// Initial slide
+function startSlide() {
+    reset();
+    sliderImages[0].style.display = "block";
+}
+ 
+// Show previous
+function slideLeft() {
+    reset();
+    sliderImages[current - 1].style.display = "block";
+    current--;
+}
+ 
+// Show next
+function slideRight() {
+    reset();
+    sliderImages[current + 1].style.display = "block";
+    current++;
+}
+ 
+// Left arrow click
+arrowLeft.addEventListener("click", function () {
+    if (current === 0) {
+        current = sliderImages.length;
+    }
+    slideLeft();
+});
+ 
+// Right arrow click
+arrowRight.addEventListener("click", function () {
+    if (current === sliderImages.length - 1) {
+        current = -1;
+    }
+    slideRight();
+});
+ 
+startSlide();
+        function showPopup() 
+            {
+                document.getElementById("popupContainer").style.display = "flex";
+            }
+            function hidePopup() 
+            {
+                document.getElementById("popupContainer").style.display = "none";
+            }
+    </script>
